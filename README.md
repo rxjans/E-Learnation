@@ -12,7 +12,7 @@ E-Learnation is a web application built using Node.js and Express.js that provid
 
 ## Clone the repository from GitHub:
 
-- git clone https://github.com/yourusername/e-learnation.git
+- git clone https://github.com/rxjans/e-learnation.git
 
 ## Navigate into the project directory:
 - cd e-learnation
