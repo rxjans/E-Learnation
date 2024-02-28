@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contactus.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+			<div class="logo"><img src="images/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="/">Home</a></li>
+        <li><a class="link" href="/contactus">Contact Us</a></li>
+        <% if (user) { %>
+          <li><a class="link" href="/user/profile">Profile</a></li>
+          <% if (user.role === 'ADMIN') { %>
+            <li><a class="link" href="/admin/users">Manage Users</a></li>
+            <% } %>
+            <% if (user.role === 'STUDENT') { %>
+              <li><a class="link" href="/user/notes">Notes</a></li>
+              <% } %>
+            <% if (user.role === 'TEACHER') { %>
+              <li><a class="link" href="/user/teacher">Teacher</a></li>
+              <% } %>
+              <li><a class="link" href="/user/users">Users</a></li>
+            <li><a class="link" href="/auth/logout">Logout</a></li>
+            <% } else { %>  
+			</ul>
+      <div>
+			<a class="get-started" href="/auth/register">Signup</a>
+      <a class="get-started" href="/auth/login">Login</a>
+      <% } %>
+      </div>
+		</nav>
+  </header>
+    <section class="section">
+    <div class="container">
+        <div class="contact-info">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                <li><i class="fa fa-map-marker"></i>
+                <span>#xyz anonymous road<br>anskkns, adjdd <br>53850</span></li>
+                <li><i class="fa fa-envelope"></i>
+                <span>any@gmail.com</span></li>
+                <li><i class="fa fa-phone"></i>
+                <span>+91 84248xxxxx</span> </li> 
+                </ul> 
+        <ul class="social">
+                <li><a><i id="social-icon" class="fas fa-facebook-f"></i></a></li>
+                <li><a><i id="social-icon" class="fas fa-linkedin"></i></a></li>
+                <li><a><i id="social-icon" class="fas fa-instagram"></i></a></li>
+                <li><a><i id="social-icon" class="fas fa-whatsapp"></i></a></li>
+                <li><a><i id="social-icon" class="fas fa-twitter"></i></a></li>
+                </ul>
+        </div>
+        <div class="contact">
+            <h2 class="animate-charcter">Contact Us</h2>
+            <!--<div class="pulse-containerr">
+                    <div class="pulse">
+                        <i class="fa fa-phone"></i>
+                    </div>
+            </div>-->
+            <form action="" method="POST" class="formBox">
+            <div class="inputBox w50">
+                <input type="text" id="name" required>
+                <span > Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" id="email" required>
+                <span >Email Address</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" id="phone" required>
+                <span >Phone Number</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" id="subject"  required>
+                <span >Subject</span>
+            </div>
+            <div class="inputBox w100">
+                <textarea name="" id="message" required></textarea>
+                <span  >Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+              <input type="submit" value="send" id="submit"  required>
+          </div>
+        </form>
+        </div>
+    </div>
+</section>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    var btn=document.getElementById("submit");
+    btn.addEventListener("click",function(e){
+    e.preventDefault()
+    console.log("hey");
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+    var phone=document.getElementById("phone").value;
+    var subject=document.getElementById("subject").value;
+    var message=document.getElementById("message").value;
+    var body="Name:"+name + "<br> email:"+ email + "<br> phone:"+ phone + "<br> Subject:"+ subject + "<br> message:"+ message;
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "vinayak192002@gmail.com",
+    Password : "AA4EC34EA7A74195FA5C49B0F18DCB55B32B",
+    From : "surunderkumar192002@gmail.com",
+    To : 'vinayak192002@gmail.com',
+    Subject :subject,
+    Body : body
+}).then(
+  message => alert(message)
+);
+    })
+</script>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Project Page
+        </title>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
+		<link
+		  href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+		  rel="stylesheet"
+		/>
+        <link rel="stylesheet" href="/css/styles2.css">
+    </head>
+    <body>
+
+      <header>
+        <nav class="navbar">
+          <div class="logo"><img src="/images/logo.png" alt="logo"></div>
+          <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a class="link" href="/contactus">Contact Us</a></li>
+            <% if (user) { %>
+              <li><a class="link" href="/user/profile">Profile</a></li>
+              <% if (user.role === 'ADMIN') { %>
+                <li><a class="link" href="/admin/users">Manage Users</a></li>
+                <% } %>
+                <% if (user.role === 'TEACHER') { %>
+                  <li><a class="link" href="/user/teacher">Teacher</a></li>
+                  <% } %>
+                <li><a class="link" href="/auth/logout">Logout</a></li>
+                <% } else { %>  
+          </ul>
+          <div>
+          <a class="get-started" href="/auth/register">Signup</a>
+          <a class="get-started" href="/auth/login">Login</a>
+          <% } %>
+          </div>
+        </nav>
+      </header>
+      <section class="section-plans" id="section-plans">
+        <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Java Projects
+        </h2>
+        </div>
+      
+    <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-1">
+              <div class="card__title card__title--1">
+                <!-- <i class="fas fa-paper-plane"></i> -->
+                <h4 class="card__heading"><b>Venue Booking System project in Java</b></h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>Java Project</li>
+                  
+                  <!-- <li>50 GB SSD Storage</li>
+                  <li>Unmetered Bandwidth</li>
+                  <li>Free SSL Certificate</li>
+                  <li>1 Included Domain</li>
+                  <li>1 Included Domain</li> -->
+                </ul>
+                <img class="imgg" src="/images/download.png" width="290px">
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Java Project</p>
+                  <p class="card__price-value">The Venue Booking System is a software application that enables businesses and individuals to book venues for events. The system allows users to search for available venues and make bookings for their chosen venues</p>
+                </div>
+                <a href="#popup" class="btn btn--white">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-2">
+              <div class="card__title card__title--2">
+                <!-- <i class="fas fa-plane"></i> -->
+                <h4 class="card__heading"><b>Bakery Billing System project in Java</b></h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>Java Project</li>
+                  <!-- <li>Unlimited Websites</li>
+                  <li>Unlimited SSD Storage</li>
+                  <li>Unlimited Domains</li>
+                  <li>Unlimited Parked Domains</li>
+                  <li>Unlimited Sub Domains</li> -->
+                </ul>
+                <img class="imgg" src="/images/download.png" width="290px">
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Java Project</p>
+                  <p class="card__price-value">Bakery inventory billing system is a software which is used to manage and track the inventory of bakery items. It stores information about the products available and their prices, stock levels, and sales.</p>
+                </div>
+                <a href="#popup" class="btn btn--white">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-3">
+              <div class="card__title card__title--3">
+                <!-- <i class="fas fa-rocket"></i> -->
+                <h4 class="card__heading"><b>Wave Cafe Shop project in Java</b></h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>Java Project</li>
+                  <!-- <li>High Performance</li>
+                  <li>2 Spam Experts</li>
+                  <li>Free SSL Certificate</li>
+                  <li>Domain Privacy</li>
+                  <li>Site Backup - CodeGuard Basic</li> -->
+                </ul>
+                <img class="imgg" src="/images/download.png" width="290px">
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Java Project</p>
+                  <p class="card__price-value">A Online Wave Café' is MVC based projects. Objective of Cyber Cafe Management System. The objective and scope of my Project Cyber Cafe Management System, The aim of the coffee management is to create communication between rural area people and co...</p>
+                </div>
+                <a href="#popup" class="btn btn--white">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-plans" id="section-plans">
+        <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary reflection">
+         HTML PROJECTS
+        </h2>
+        </div>
+      
+        <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-1">
+              <div class="card__title card__title--1">
+                <!-- <i class="fas fa-paper-plane"></i> -->
+                <h4 class="card__heading"><b>Covid-19 Live Corona Tracker project in HTML CSS</b></h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>HTML Projects</li>
+                  
+                  <!-- <li>50 GB SSD Storage</li>
+                  <li>Unmetered Bandwidth</li>
+                  <li>Free SSL Certificate</li>
+                  <li>1 Included Domain</li>
+                  <li>1 Included Domain</li> -->
+                </ul>
+                <img class="imgg1" src="/images/logoo.webp" width="250px">
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">HTML Project</p>
+                  <p class="card__price-value">Welcome, Build a COVID-19 Live Tracker App using an API. Create Coronavirus Live Statistics with the Number of Active Cases, Total Cases, Critical Cases, Death Toll, Recovered Cases, Total Tests</p>
+                </div>
+                <a href="#popup" class="btn btn--white">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-2">
+              <div class="card__title card__title--2">
+                <!-- <i class="fas fa-plane"></i> -->
+                <h4 class="card__heading"><b>Restaurant Websites Template project in HTML CSS</b></h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>HTML Project</li>
+                  <!-- <li>Unlimited Websites</li>
+                  <li>Unlimited SSD Storage</li>
+                  <li>Unlimited Domains</li>
+                  <li>Unlimited Parked Domains</li>
+                  <li>Unlimited Sub Domains</li> -->
+                </ul>
+                <img class="imgg1" src="/images/logoo.webp" width="250px">
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">HTML Project</p>
+                  <p class="card__price-value">lots of features in this websites you can order food and contact the owner of websites ad in this websites about of the restaurant and the testimonials of websites the data of employe ..</p>
+                </div>
+                <a href="#popup" class="btn btn--white">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-3">
+              <div class="card__title card__title--3">
+                <!-- <i class="fas fa-rocket"></i> -->
+                <h4 class="card__heading"><b>Online Education Website Using Html Css project in HTML CSS</b></h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>HTML Project</li>
+                  <!-- <li>High Performance</li>
+                  <li>2 Spam Experts</li>
+                  <li>Free SSL Certificate</li>
+                  <li>Domain Privacy</li>
+                  <li>Site Backup - CodeGuard Basic</li> -->
+                </ul>
+                <img class="imgg1" src="/images/logoo.webp" width="250px">
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">C++</p>
+                  <p class="card__price-value">An online education websiate for online tutors. This web application is created using HTML , CSS and Js. Don't need any heavy software....</p>
+                </div>
+                <a href="#popup" class="btn btn--white">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+    
+            
+      <section class="section-plans" id="section-plans" >
+        <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary reflection">
+         C/C++ Projects
+        </h2>
+        </div>
+
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front-1">
+                <div class="card__title card__title--1">
+                  <!-- <i class="fas fa-paper-plane"></i> -->
+                  <h4 class="card__heading"><b>Digital Clock project in C/C++</b></h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>C/C++</li>
+                    
+                    <!-- <li>50 GB SSD Storage</li>
+                    <li>Unmetered Bandwidth</li>
+                    <li>Free SSL Certificate</li>
+                    <li>1 Included Domain</li>
+                    <li>1 Included Domain</li> -->
+                  </ul>
+                  <img class="imgg2" src="/images/c.png" width="280px">
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Java Project</p>
+                    <p class="card__price-value">IT SHOWS TIME, DATE, DAY AM/PM DAY TIME MONTH DAY YEAR ...</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front-2">
+                <div class="card__title card__title--2">
+                  <!-- <i class="fas fa-plane"></i> -->
+                  <h4 class="card__heading"><b>Student Registration System project in C/C++</b></h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>C/C++ Project</li>
+                    <!-- <li>Unlimited Websites</li>
+                    <li>Unlimited SSD Storage</li>
+                    <li>Unlimited Domains</li>
+                    <li>Unlimited Parked Domains</li>
+                    <li>Unlimited Sub Domains</li> -->
+                  </ul>
+                  <img class="imgg2" src="/images/c.png" width="280px">
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">C/C++ Project</p>
+                    <p class="card__price-value">A USER CAN REGISTER ANY NUMBER OF STUDENT IN THIS A CASE STUDY SOFTWARE, AND DISPLAY, SEARCH, MODIFY, DELETE A STUDENT FROM THE FILE. </p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front-3">
+                <div class="card__title card__title--3">
+                  <!-- <i class="fas fa-rocket"></i> -->
+                  <h4 class="card__heading"><b>Simple Calculator In C project in C/C++</b></h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>C++ Projects</li>
+                    <!-- <li>High Performance</li>
+                    <li>2 Spam Experts</li>
+                    <li>Free SSL Certificate</li>
+                    <li>Domain Privacy</li>
+                    <li>Site Backup - CodeGuard Basic</li> -->
+                  </ul>
+                  <img class="imgg2" src="/images/c.png" width="280px">
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">C++</p>
+                    <p class="card__price-value">it is a simple calculator , this project can be used in school projects, this is simple project , just copy paste and run but for any queries you can mail me : vansh2003gotra@gmail.com...</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+    </body>
+</html>

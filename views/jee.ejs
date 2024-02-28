@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
+	<title>E-Learnation</title>
+	<link rel="stylesheet" type="text/css" href="/css/subjects.css">
+	
+</head>
+<body>
+
+	<!-- NAVIGATION -->
+	<header>
+		<nav class="navbar">
+				<div class="logo"><img src="/images/logo.png" alt="logo"></div>
+				<ul>
+					<li><a class="active" href="/">Home</a></li>
+			<li><a class="link" href="/contactus">Contact Us</a></li>
+			<% if (user) { %>
+			  <li><a class="link" href="/user/profile">Profile</a></li>
+			  <% if (user.role === 'ADMIN') { %>
+				<li><a class="link" href="/admin/users">Manage Users</a></li>
+				<% } %>
+				<% if (user.role === 'TEACHER') { %>
+				  <li><a class="link" href="/user/teacher">Teacher</a></li>
+				  <% } %>
+				<li><a class="link" href="/auth/logout">Logout</a></li>
+				<% } else { %>  
+				</ul>
+		  <div>
+				<a class="get-started" href="/auth/register">Signup</a>
+		  <a class="get-started" href="/auth/login">Login</a>
+		  <% } %>
+		  </div>
+			</nav>
+	  </header>
+
+	<div class="title">
+		<span>Prepare for JEE Mains & Advanced</span>
+		<div class="shortdesc">
+			<p>Learn your basic concepts to prepare for a career in<br>Engineering and Medical fields</p>
+		</div>
+	</div>
+
+<!-- keywords -->
+<div class="container">
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="../images/ALGEBRA.jpg"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Algebra</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="../images/light.jpg"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Light</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="../images/laser.jpg"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Laser</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="../images/inertia.jpg"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Inertia</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="../images/current.jpg"></img>
+	  </div>
+	  <div class="card-text">
+		<p>current</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/63238/pexels-photo-63238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Matrices</p>
+	  </div>
+	</a>
+	<a href="" class="card-right"> 
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/1603891/pexels-photo-1603891.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Integration</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/585581/pexels-photo-585581.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Diffrential</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/532561/pexels-photo-532561.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Calculus</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/279376/pexels-photo-279376.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Determinant</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/701855/pexels-photo-701855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Snell</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/262577/pexels-photo-262577.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Equilibrium</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/978342/pexels-photo-978342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Thermo</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/305831/pexels-photo-305831.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Chemical</p>
+	  </div>
+	</a>
+	<a href="" class="card-right">
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/355728/pexels-photo-355728.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>Chemistery</p>
+	  </div>
+	</a>
+	<a href=""  class="card-left" >
+	  <div class="card-image">
+		<img src="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
+	  </div>
+	  <div class="card-text">
+		<p>LMS</p>
+	  </div>
+	</a>
+  </div>
+
+	<div class="inbt">
+		<h2>Accelerate your career with JEE Main & Advanced programs</h2>
+	</div>
+
+<!-- COURSES AVAILABLE -->
+	<div class="ccard">
+	<center>
+		<div class="ccardbox">
+			<div class="dcard">
+				<a href="#organic"><div class="fpart"><img src="../images/organic.jpeg"></div>
+				<div class="spart">2 Courses <img src="../images/dropdown.png"></div></a>
+			</div>
+			<div class="dcard">
+				<a href="#inorganic"><div class="fpart"><img src="../images/inorganic.jpeg"></div>
+				<div class="spart">5 Courses <img src="../images/dropdown.png"></div></a>
+			</div>
+			<div class="dcard">
+				<a href="#physical">
+				<div class="fpart"><img src="../images/physical.jpeg"></div>
+				<div class="spart">3 Courses <img src="../images/dropdown.png"></div></a>
+			</div>
+		</div>
+		<div class="ccardbox">
+			<div class="dcard">
+				<a href="#physics"><div class="fpart"><img src="../images/physics.jpeg"></div>
+				<div class="spart">6 Courses <img src="../images/dropdown.png"></div></a>
+			</div>
+			<div class="dcard">
+				<a href="#math"><div class="fpart"><img src="../images/math.jpeg"></div>
+				<div class="spart">2 Courses <img src="../images/dropdown.png"></div></a>
+			</div>
+			<div class="dcard">
+				<a href="#sample_papers"><div class="fpart"><img src="../images/paper.jpeg"></div>
+				<div class="spart"><p>1 Courses </p><img src="../images/dropdown.png"></div></a>
+			</div>
+		</div>
+	</center>
+	</div>
+
+<!-- VIDEOS SECTION -->
+	<div class="title2" id="organic">
+		
+			<div id="popDest">
+				<div class="wave">
+				  <span style="--item:1">O</span>
+				  <span style="--item:2">R</span>
+				  <span style="--item:3">G</span>
+				  <span style="--item:4">A</span>
+				  <span style="--item:5">N</span>
+				  <span style="--item:6">I</span>
+				  <span style="--item:7">C</span>
+				</div>
+				<div id="wave"class="wave">
+				  <span style="--item:8">C</span>
+				  <span style="--item:9">H</span>
+				  <span style="--item:11">E</span>
+				  <span style="--item:12">M</span>
+				  <span style="--item:13">I</span>
+				  <span style="--item:14">S</span>
+				  <span style="--item:15">T</span>
+				  <span style="--item:16">R</span>
+				  <span style="--item:17">Y</span>
+				  
+				</div>
+			</div>
+			
+			
+		
+	</div>
+	
+	<center>
+		<div class="ccardbox2">
+			<div class="dcard2"><span class="tag" >1/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/hdAW3ng8gx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >2/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/rHMMX18a8ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >3/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/RdcC7_E8yeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >4/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/qkTYf0sHDiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		
+			<div class="dcard2"><span class="tag" >5/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jGyb5HCz-wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >6/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/lVbuBY0YMu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >7/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/DDYJ6piwFVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >8/8</span>
+				<div class="fpart2"><img src="../images/organic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/-dEaa1mCfps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</center>
+
+<br><br>
+	<div class="click-me">
+		<a href="https://www.youtube.com/playlist?list=PLF_7kfnwLFCGnyrRfiT8251OrVqJzHnBM" target="_blank">Click Here to Watch full playlist</a>
+	</div>
+
+<!-- VIDEOS SECTION -->
+
+	<div class="title2" id="inorganic">
+
+		<div id="popDest">
+			<div class="wave">
+				<span style="--item:1">I</span>
+				<span style="--item:2">N</span>
+			  <span style="--item:3">O</span>
+			  <span style="--item:4">R</span>
+			  <span style="--item:5">G</span>
+			  <span style="--item:6">A</span>
+			  <span style="--item:7">N</span>
+			  <span style="--item:8">I</span>
+			  <span style="--item:9">C</span>
+			</div>
+			<div id="wave"class="wave">
+			  <span style="--item:10">C</span>
+			  <span style="--item:11">H</span>
+			  <span style="--item:12">E</span>
+			  <span style="--item:13">M</span>
+			  <span style="--item:14">I</span>
+			  <span style="--item:15">S</span>
+			  <span style="--item:16">T</span>
+			  <span style="--item:17">R</span>
+			  <span style="--item:18">Y</span>
+			  
+			</div>
+		</div>
+		
+	
+	</div>
+	<center>
+		<div class="ccardbox2">
+			<div class="dcard2"><span class="tag" >1/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/3T1p0Q74x7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >2/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/gFzIAZbzmH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >3/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/1U3-cdOoOD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >4/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SDhze1GBDdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		
+			<div class="dcard2"><span class="tag" >5/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/b7veCCCood0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >6/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/b7veCCCood0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >7/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/b7veCCCood0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >8/8</span>
+				<div class="fpart2"><img src="../images/inorganic.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/b7veCCCood0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</center>
+<br><br>
+	<div class="click-me">
+		<a href="https://www.youtube.com/watch?v=2B8CRyfGLo4" target="_blank">Click Here to Watch full playlist</a>
+	</div>
+
+<!-- VIDEOS SECTION -->
+
+	<div class="title2" id="physical">
+
+		<div id="popDest">
+			<div class="wave">
+				<span style="--item:1">P</span>
+				<span style="--item:2">H</span>
+			  <span style="--item:3">Y</span>
+			  <span style="--item:4">S</span>
+			  <span style="--item:5">I</span>
+			  <span style="--item:6">C</span>
+			  <span style="--item:7">A</span>
+			  <span style="--item:8">L</span>
+			  
+			</div>
+			<div id="wave"class="wave">
+			  <span style="--item:10">C</span>
+			  <span style="--item:11">H</span>
+			  <span style="--item:12">E</span>
+			  <span style="--item:13">M</span>
+			  <span style="--item:14">I</span>
+			  <span style="--item:15">S</span>
+			  <span style="--item:16">T</span>
+			  <span style="--item:17">R</span>
+			  <span style="--item:18">Y</span>
+			  
+			</div>
+		</div>
+		
+		
+		
+	</div>
+	<center>
+		<div class="ccardbox2">
+			<div class="dcard2"><span class="tag" >1/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >2/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >3/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >4/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		
+			<div class="dcard2"><span class="tag" >5/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >6/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >7/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >8/8</span>
+				<div class="fpart2"><img src="../images/physical.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/g50vTY3ot_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</center>
+<br><br>
+	<div class="click-me">
+		<a href="https://youtu.be/2y4cf47I21A" target="_blank">Click Here to Watch full playlist</a>
+	</div>
+
+
+<!-- VIDEOS SECTION -->
+
+	<div class="title2" id="physics">
+		<div id="popDest">
+			<div class="wave">
+				<span style="--item:1">P</span>
+				<span style="--item:2">H</span>
+			  <span style="--item:3">Y</span>
+			  <span style="--item:4">S</span>
+			  <span style="--item:5">I</span>
+			  <span style="--item:6">C</span>
+			  <span style="--item:7">S</span>
+			</div>
+			
+		</div>
+		
+	</div>
+	<center>
+		<div class="ccardbox2">
+			<div class="dcard2"><span class="tag" >1/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >2/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >3/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >4/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		
+			<div class="dcard2"><span class="tag" >5/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >6/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >7/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >8/8</span>
+				<div class="fpart2"><img src="../images/physics.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LvDEO27plw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</center>
+<br><br>
+	<div class="click-me">
+		<a href="https://youtu.be/FYE0YYuAyu0" target="_blank">Click Here to Watch full playlist</a>
+	</div>
+
+<!-- VIDEOS SECTION -->
+
+	<div class="title2" id="math">
+
+		<div id="popDest">
+			<div class="wave">
+				<span style="--item:1">M</span>
+				<span style="--item:2">A</span>
+			  <span style="--item:3">T</span>
+			  <span style="--item:4">H</span>
+			  <span style="--item:5">E</span>
+			  <span style="--item:6">M</span>
+			  <span style="--item:7">A</span>
+			  <span style="--item:8">T</span>
+			  <span style="--item:9">I</span>
+			  <span style="--item:10">C</span>
+			  <span style="--item:11">S</span>
+			</div>
+			
+		</div>
+		
+
+
+		
+	</div>
+	<center>
+		<div class="ccardbox2">
+			<div class="dcard2"><span class="tag" >1/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >2/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >3/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >4/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		
+			<div class="dcard2"><span class="tag" >5/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >6/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >7/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="dcard2"><span class="tag" >8/8</span>
+				<div class="fpart2"><img src="../images/math.jpeg">
+					<iframe src="https://www.youtube.com/embed/xxGyTHWrHZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</center>
+
+<br><br>
+	<div class="click-me">
+		<a href="https://youtu.be/xxGyTHWrHZg" target="_blank">Click Here to Watch full playlist</a>
+	</div>
+
+
+<!-- SAMPLE PAPERS -->
+	<div class="title2" id="sample_papers">
+		<div id="popDest">
+			<div class="wave">
+			  <span style="--item:1">S</span>
+			  <span style="--item:2">A</span>
+			  <span style="--item:3">M</span>
+			  <span style="--item:4">P</span>
+			  <span style="--item:5">L</span>
+			  <span style="--item:6">E</span>
+			  </div>
+			  <div id="wave" class="wave">
+			  <span style="--item:7">P</span>
+			  <span style="--item:8">A</span>
+			  <span style="--item:9">P</span>
+			  <span style="--item:10">E</span>
+			  <span style="--item:11">R</span>
+			  <span style="--item:12">S</span>
+		
+			</div>
+		</div>
+	</div>
+
+	<div class="sample">
+		<ul>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2014 Set-A</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2014 Set-B</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2014 Set-C</a></li>
+		</ul>
+		<ul>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2015 Set-A</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2015 Set-B</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2015 Set-C</a></li>
+		</ul>
+		<ul>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2016 Set-A</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2016 Set-B</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2016 Set-C</a></li>
+		</ul>
+	</div>
+	<div class="sample lastSample">
+		<ul>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2017 Set-A</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2017 Set-B</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2017 Set-C</a></li>
+		</ul>
+		<ul>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2018 Set-A</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2018 Set-B</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2018 Set-C</a></li>
+		</ul>
+		<ul>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2019 Set-A</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2019 Set-B</a></li>
+			<li><a href="../samplePapers/p1.pdf" target="_blank">Sample Paper 2019 Set-C</a></li>
+		</ul>
+	</div>
+
+<!-- FOOTER -->
+
+</body>
+<script type="text/javascript" src="../script.js"></script>
+</html> 

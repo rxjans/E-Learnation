@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+         <img src="#">
+          <a href="/"><h2>CareHub</h2></a>
+        </div>
+          <ul>
+            <li><a class="link" href="/">Home</a></li>
+            <% if (user) { %>
+              <li><a class="link" href="/user/profile">Profile</a></li>
+              <% if (user.role === 'ADMIN') { %>
+                <li><a class="link" href="/admin/users">Manage Users</a></li>
+                <% } %>
+                <li><a class="link" href="/auth/logout">Logout</a></li>
+                <% } else { %>
+            
+             <li><a class="link" href="/contactus">Contact Us</a></li>
+          </ul>
+       <div> <a href="/auth/register"><button class="sub1" type="button">Sign In</button></a>
+        <a href="/auth/login"><button class="sub2"type="button">Sign Up</button></a>
+        <% } %>
+        </div>
+      </nav>
+</body>
+</html>

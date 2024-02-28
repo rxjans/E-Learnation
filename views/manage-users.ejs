@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/navbar.css" />
+</head>
+<body>
+  <%- include ('layouts/header') %>
+  <header>
+    <nav class="navbar">
+			<div class="logo"><img src="/images/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="/">Home</a></li>
+        <li><a class="link" href="/contactus">Contact Us</a></li>
+        <% if (user) { %>
+          <li><a class="link" href="/user/profile">Profile</a></li>
+          <% if (user.role === 'ADMIN') { %>
+            <li><a class="link" href="/admin/users">Manage Users</a></li>
+            <% } %>
+            <% if (user.role === 'STUDENT') { %>
+              <li><a class="link" href="/user/notes">Notes</a></li>
+              <% } %>
+            <% if (user.role === 'TEACHER') { %>
+              <li><a class="link" href="/user/teacher">Teacher</a></li>
+              <% } %>
+            <li><a class="link" href="/auth/logout">Logout</a></li>
+            <% } else { %>  
+			</ul>
+      <div>
+			<a class="get-started" href="/auth/register">Signup</a>
+      <a class="get-started" href="/auth/login">Login</a>
+      <% } %>
+      </div>
+		</nav>
+  </header>
+<section class="manage-user">
+<table class="table">
+  <h1 class="table">Manage Users</h1>
+  <thead>
+    <th>id</th>
+    <th>email</th>
+    <th>role</th>
+  </thead>
+  <tbody>
+    <% users.forEach(user => { %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><a href="/admin/user/<%= user.id %>"><%= user.email %></a></td>
+      <td>
+        <form
+          action="/admin/update-role"
+          method="post"
+          class="manage-user-form"
+        >
+          <input type="hidden" name="id" value="<%= user.id %>" />
+          <select name="role" id="role">
+            <option value="ADMIN" <%= user.role === 'ADMIN' ? 'selected' : '' %> >Admin</option>
+            <option value="TEACHER" <%= user.role === 'TEACHER' ? 'selected' : '' %>>Teacher</option>
+            <option value="STUDENT" <%= user.role === 'STUDENT' ? 'selected' : '' %>>Student</option>
+          </select>
+          <input type="submit" value="update">
+        </form>
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+<%- include ('layouts/footer') %>
+</section>
+</body>
+</html>

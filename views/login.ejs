@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/login.css" />
+  
+ <!--- <%- include('./layouts/header') %>--->
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+				<div class="logo"><img src="/images/logo.png" alt="logo"></div>
+				<ul>
+					<li><a class="active" href="/">Home</a></li>
+			<li><a class="link" href="/contactus">Contact Us</a></li>
+			<% if (user) { %>
+			  <li><a class="link" href="/user/profile">Profile</a></li>
+			  <% if (user.role === 'ADMIN') { %>
+				<li><a class="link" href="/admin/users">Manage Users</a></li>
+				<% } %>
+				<% if (user.role === 'STUDENT') { %>
+				  <li><a class="link" href="/user/notes">Notes</a></li>
+				  <% } %>
+				<% if (user.role === 'TEACHER') { %>
+				  <li><a class="link" href="/user/teacher">Teacher</a></li>
+				  <% } %>
+				  <li><a class="link" href="/user/users">Users</a></li>
+				<li><a class="link" href="/auth/logout">Logout</a></li>
+				<% } else { %>  
+				</ul>
+		  <div>
+				<a class="get-started" href="/auth/register">Signup</a>
+		  <a class="get-started" href="/auth/login">Login</a>
+		  <% } %>
+		  </div>
+			</nav>
+	  </header>
+<div class="msg"><%- include('./layouts/header') %></div>
+<div class="signupFrm">
+  <form action="/auth/login" method="post" class="form" id="form">
+    <h1 class="title">Log In</h1>
+    <div class="inputContainer">
+    <input type="email" name="email" class="input" placeholder="a"  required="">
+    <label for="" class="label">Email</label>
+    </div>	
+    <div class="inputContainer">
+    <input type="password" name="password" class="input" placeholder="a"  required="">
+    <label for="" class="label">Password</label>
+  </div>
+  <div id="LangTable"><a href="home" id="aa"></a></div>
+    <span class="next">Create a new Account?<a href="/auth/register">Register here</a></span>
+    <input type="submit" class="submitBtn" value="Login">
+  </form>
+  </div>
+<%- include('./layouts/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-LearNation</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+  
+  <!--<%- include('./layouts/header') %>
+  <%- include('./layouts/footer') %>-->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+			<div class="logo"><img src="images/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="/">Home</a></li>
+        <li><a class="link" href="/contactus">Contact Us</a></li>
+        <% if (user) { %>
+          <li><a class="link" href="/user/profile">Profile</a></li>
+          <% if (user.role === 'ADMIN') { %>
+            <li><a class="link" href="/admin/users">Manage Users</a></li>
+            <% } %>
+            <% if (user.role === 'STUDENT') { %>
+              <li><a class="link" href="/user/notes">Notes</a></li>
+              <% } %>
+            <% if (user.role === 'TEACHER') { %>
+              <li><a class="link" href="/user/teacher">Teacher</a></li>
+              <% } %>
+            <li><a class="link" href="/auth/logout">Logout</a></li>
+            <% } else { %>  
+			</ul>
+      <div>
+			<a class="get-started" href="/auth/register">Signup</a>
+      <a class="get-started" href="/auth/login">Login</a>
+      <% } %>
+      </div>
+		</nav>
+  </header>
+  <main class="aside">
+    <section id="section-1">
+    <div class="head-container">
+        <div class="quote">
+          <p>You don't understand anything until you</p> <h1 id="learn">Learn</h1><p>it more than one way.</p>
+          <h5>Research shows that you begin in the womb and go right on learning until the moment you pass on.Your brain has a capacity for learning that is virtually liitless, which makes every human a potential genius.</h5>
+        </div>
+        <div class="svg-image">
+          <img src="images/vector.png" alt="svg">
+        </div>
+    </div>
+  </section>
+  <div class = "title1">
+    <h2>Our Services</h2>
+</div>
+  <section id="section-2">
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+        <div class="ag-courses_item">
+          <a href="/user/jee" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              JEE Preparation
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="/user/gate" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              GATE Preparation
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="/user/jee#sample_papers" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+             Sample Papers
+            </div>  
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="/user/quiz" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Daily Quiz
+            </div>
+    
+            
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="/user/computer_courses" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+            <div class="ag-courses-item_title">
+              Computer Courses
+            </div> 
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="/user/computer_courses#data" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+             Data Structures
+            </div>
+          </a>
+        </div>
+        
+         <div class="ag-courses_item">
+          <a href="/user/computer_courses#algo" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+             Algorithms
+            </div>
+          </a>
+        </div>
+        
+         <div class="ag-courses_item">
+          <a href="/user/computer_courses#projects" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+            Projects
+            </div>
+          </a>
+        </div>
+        
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+             Communication Skills
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-3">
+    <div class="main-container">
+      <h2>Our Team</h2>
+      <hr>
+      <div class="members">
+          <div class="team-member">
+              <img src="images/profile.webp">
+              <h4>Vinayak</h4>
+              <p>Web Developer</p>
+              <a class="follow" href="https://www.linkedin.com/in/vinayak143" >Folllow</a>
+          </div>
+          <div class="team-member">
+            <img src="images/profile.webp">
+              <h4>Rajan</h4>
+              <p>Web Developer</p>
+              <a class="follow" href="https://www.linkedin.com/mwlite/in/rajan-sharma-418364242" >Folllow</a>
+          </div>
+          <div class="team-member">
+              <img src="images/profile.webp">
+              <h4>Jatin</h4>
+              <p>Web Developer</p>
+              <a class="follow" href="https://www.linkedin.com/in/anirban-nandy-008480185">Folllow</a>
+          </div>
+          <div class="team-member">
+            <img src="images/profile.webp">
+              <h4>Priyanshu</h4>
+              <p>Web Developer</p>
+              <a class="follow" href="https://www.linkedin.com/in/priyanshu-garg-786873215" >Folllow</a>
+          </div>
+      </div>
+  </div>
+  </section>
+  <section class = "customers" id = "customers">
+    <div class = "sec-width">
+        <div class = "title">
+            <h2>What do our  users say?</h2>
+        </div>
+        <div class = "customers-container">
+            <!-- single customer -->
+            <div class = "customer">
+              <div class = "card-image">
+                  <img src = "images/profile.webp" alt = "customer image">
+              </div>
+                <div class = "rating">
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "far fa-star"></i></span>
+                </div>
+                <h3>We Loved it</h3>
+                <p> Hands down the most special and amazing trip i have done to date,and coming from well seasoned-traveler this is saying a lot</p>
+                <span>Mohit, India</span>
+            </div>
+            <!-- end of single customer -->
+            <!-- single customer -->
+            <div class = "customer">
+              <div class = "card-image">
+              <img src = "images/profile.webp" alt = "customer image">
+          </div>
+                <div class = "rating">
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "far fa-star"></i></span>
+                </div>
+                <h3>Comfortable Living</h3>
+                <p>Hands down the most special and amazing trip i have done to date,and coming from well seasoned-traveler this is saying a lot</p>
+                <span>Manisha, India</span>
+            </div>
+            <!-- end of single customer -->
+            <!-- single customer -->
+            <div class = "customer">
+              <div class = "card-image">
+                  <img src = "images/profile.webp" alt = "customer image">
+              </div>
+                <div class = "rating">
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "far fa-star"></i></span>
+                </div>
+                <h3>Nice Place</h3>
+                <p>Hands down the most special and amazing trip i have done to date,and coming from well seasoned-traveler this is saying a lot</p>
+                <span>Ishan, India</span>
+            </div>
+            <!-- end of single customer -->
+        </div>
+    </div>
+</section>
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How can we improve the education system?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Incorporate technology: Technology can play a significant role in improving the education system. Schools can use digital resources and online learning platforms to enhance the learning experience and provide students with access to a wider range of educational materials.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What is the role of technology in education?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>technology can enhance the learning experience, provide access to a wider range of educational materials, and facilitate distance learning.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What are the most effective teaching strategies?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>effective teaching strategies vary depending on the subject matter and the needs of the students, but may include active learning, differentiated instruction, and formative assessment</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What are the benefits of a college education?
+        </span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>A college education can provide numerous benefits such as higher earning potential, greater career opportunities, improved critical thinking and problem-solving skills, increased knowledge and awareness of different subjects, and personal development through social interactions and exposure to diverse perspectives.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How can we improve education in underprivileged communities?
+        </span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>There are several ways to improve education in underprivileged communities, such as providing access to high-quality teachers and resources, offering after-school programs and tutoring, implementing technology to enhance learning, involving parents and the community in the education process, and addressing any social and economic barriers that may be hindering academic success. Additionally, providing mentorship and support to students can help to boost their confidence and motivation to succeed in school.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <div class="footer-item">
+          <h2>Company</h2>
+          <p><a href=""> About Us</a></p>
+          <p><a href=""> Our Services</a></p>
+          <p><a href=""> Privacy Policy</a></p>
+      </div>
+      <div class="footer-item">
+          <h2>Get Help </h2>
+          <p><a href=""> FAQ</a></p>
+          <p><a href=""> Retuns </a></p>
+          <p><a href=""> Payment Options </a></p>
+      </div>
+      <div class="footer-item">
+          <h2>Contact Us</h2>
+          <p><a href="">#123 hfbhdbhbfhbr </a></p>
+          <p><a href=""> +91 xxxxxxxxxx</a></p>
+          <p><a href=""> carehub@gmail.com</a></p>
+      </div>
+      <div class="footer-item social">
+          <h2> Follow Us </h2>
+          <ul>
+              <li> <i class="fa-brands fa-instagram"></i> </li>
+              <li> <i class="fa-brands fa-linkedin-in"></i> </li>
+              <li> <i class="fa-brands fa-youtube"></i> </li>
+              <li> <i class="fa-brands fa-twitter"></i> </li>
+          </ul>
+      </div>
+  </div>
+  </footer>
+</body>
+<script>
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</html>
