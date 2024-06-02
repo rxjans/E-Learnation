@@ -7,7 +7,6 @@ E-Learnation is a web application built using Node.js and Express.js that provid
 - CRUD operations for managing courses, lessons, and users.
 - Access control for various user roles such as students, instructors, and administrators.
 - User-friendly interface for browsing courses and accessing lessons.
-- Secure payment integration for premium content (optional feature).
 - Installation
 
 ## Clone the repository from GitHub:
